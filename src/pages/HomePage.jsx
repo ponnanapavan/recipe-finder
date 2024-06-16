@@ -1,8 +1,9 @@
 import { Heart, HeartPulse, Search, Soup } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import RecipeCard from '../components/RecipeCard'
-const APP_ID='bb43607c'
-  const APP_KEY='db0bc51a13a77a915083987284ba5933'
+const APP_ID=import.meta.env.VITE_APP_ID
+const APP_KEY=import.meta.env.VITE_APP_KEY
+
 const HomePage = () => {
   const [Recipes, setRecipes]=useState([]);
   const [loading, setLoading]=useState(true);
